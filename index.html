@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语听力练习 - 八年级</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>英语听力练习</h1>
+            <p>八年级听力测试题集</p>
+        </header>
+
+        <main>
+            <div class="player-section">
+                <div class="audio-player">
+                    <audio id="audioPlayer" controls></audio>
+                    <div class="player-controls">
+                        <button id="playBtn" class="control-btn">播放</button>
+                        <button id="pauseBtn" class="control-btn">暂停</button>
+                        <button id="stopBtn" class="control-btn">停止</button>
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+                        <span class="volume-text">音量</span>
+                    </div>
+                    <div class="current-track">
+                        <span id="currentTrackName">请选择音频文件</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audio-list-section">
+                <h2>音频列表</h2>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="搜索音频文件...">
+                    <button id="searchBtn">搜索</button>
+                </div>
+                <div class="audio-list" id="audioList">
+                    <!-- 音频列表将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 英语听力练习网站</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
